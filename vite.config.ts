@@ -6,11 +6,12 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["@mediapipe/tasks-vision"],
   },
-  // Multi-page build: both HTML roots are entry points.
+  // Multi-page build: all HTML roots are entry points.
   build: {
     rollupOptions: {
       input: {
         main: "index.html",
+        cursorRepulsion: "cursor-repulsion.html",
         handRepulsion: "hand-repulsion.html",
       },
     },

@@ -2,86 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cursor Repulsion</title>
-    <link rel="stylesheet" href="/src/fonts.css" />
-    <link rel="stylesheet" href="/src/nav.css" />
-    <style>
-      *,
-      *::before,
-      *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        width: 100%;
-        min-height: 100vh;
-        background: #000;
-        color: #fff;
-        font-family: "PPNeueMontreal", sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 80px 24px;
-      }
-
-      main {
-        width: 100%;
-        max-width: 680px;
-      }
-
-      #radius-ring {
-        display: none;
-      }
-
-      /* ─── text container ───────────────────────────────────── */
-      #text-container {
-        position: relative;
-        cursor: none;
-        /* height set dynamically by JS */
-      }
-
-      #text-container span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-family: "PPNeueMontreal", sans-serif;
-        font-size: 18px;
-        line-height: 1;
-        color: rgba(255, 255, 255, 0.92);
-        white-space: pre;
-        will-change: transform;
-        user-select: none;
-        pointer-events: none;
-        /* transform set by JS */
-      }
-
-      /* Loading state — hides the container until JS has built the layout */
-      #text-container.loading {
-        visibility: hidden;
-      }
-    </style>
+    <meta http-equiv="refresh" content="0; url=/cursor-repulsion.html" />
+    <title>Redirecting…</title>
   </head>
-  <body>
-    <nav class="site-nav">
-      <a href="/" class="nav-link active">Cursor Repulsion</a>
-      <a href="/hand-repulsion.html" class="nav-link">Hand Repulsion</a>
-    </nav>
-
-    <div id="radius-ring"></div>
-
-    <main>
-      <div id="text-container" class="loading"></div>
-    </main>
-
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  <body></body>
 </html>

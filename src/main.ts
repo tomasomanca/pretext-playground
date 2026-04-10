@@ -28,7 +28,6 @@ interface CharState {
 // ─── DOM refs ────────────────────────────────────────────────────────────────
 
 const container = document.getElementById("text-container") as HTMLDivElement;
-const ring = document.getElementById("radius-ring") as HTMLDivElement;
 
 // ─── Off-screen canvas for text measurement ──────────────────────────────────
 
@@ -120,16 +119,11 @@ container.addEventListener("mousemove", (e: MouseEvent) => {
   // Coords relative to container (accounting for page scroll)
   mouseX = e.clientX - (containerOffsetX - window.scrollX);
   mouseY = e.clientY - (containerOffsetY - window.scrollY);
-
-  // Position the radius ring centered on cursor (fixed coords)
-  ring.style.transform = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
-  ring.classList.add("visible");
 });
 
 container.addEventListener("mouseleave", () => {
   mouseX = -99999;
   mouseY = -99999;
-  ring.classList.remove("visible");
 });
 
 window.addEventListener("scroll", updateContainerOffset, { passive: true });
