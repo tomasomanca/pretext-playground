@@ -1,6 +1,6 @@
 # pretext-playground
 
-A playground for experimenting with [`@chenglou/pretext`](https://github.com/chenglou/pretext) — a library for physics-based text animation.
+A playground for experimenting with [`@chenglou/pretext`](https://github.com/chenglou/pretext).
 
 ## Demos
 
