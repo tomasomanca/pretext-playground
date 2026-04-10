@@ -1,0 +1,28 @@
+.site-nav {
+  position: fixed;
+  top: 22px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 200;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.28);
+  text-decoration: none;
+  font-family: "PPNeueMontreal", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.15s ease;
+  line-height: 1;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link.active {
+  color: rgba(255, 255, 255, 0.9);
+}

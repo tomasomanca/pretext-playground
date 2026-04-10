@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# licensed fonts (PP Neue Montreal — not redistributable)
+public/fonts/*.woff
+public/fonts/*.woff2
+
+# env
+.env
+.env.*
+
+# Claude Code local config
+.claude/
+
+# OS
+.DS_Store
